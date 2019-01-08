@@ -1,0 +1,734 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto", sans-serif;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* Border Box */
+* {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+/*////////////////////  NAV   ///////////////////////*/
+/* Add a background color to the navigation */
+.topnav {
+    background-color:dimgrey;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #4A235A;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4A235A;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/*////////////////////  GRID   ///////////////////////*/
+
+/* This is the Main Grid Layout for the Home Page */
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header-area header-area"
+        "main-area main-area"
+        "footer-area footer-area";
+}
+
+/* The Header of our Grid CSS Layout */
+#header {
+    grid-area: header-area;
+}
+
+#header ul {
+    float: right;
+    display: inline-flex;
+    list-style: none;
+    padding-right: 60px;
+}
+
+#header ul i {
+    float: right;
+    padding: 8px;
+    color: #0762c8;
+}
+
+/* This is the main area */
+main#main {
+    grid-area: main-area;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "title-area1 title-area1"
+        "section1 section2"
+        "title-area2 title-area2"
+        "section3 section4"
+        "section5 section6"
+        "section7 section8"
+        "section9 section10"
+        "title-area3 title-area3"
+        "section11 section12"
+        "section13 section14"
+        "section15 section16"
+        "section17 section18"
+        "section19 section20"
+        "title-area4 title-area4"
+        "section21 section22"
+        "section23 section24"
+        "section25 section26";
+}
+
+#title {
+    grid-area: title;
+    text-align: center;
+}
+
+#theme-title-1 {
+    grid-area: title-area1;
+    text-align: center;
+}
+
+#theme-title-2 {
+    grid-area: title-area2;
+    text-align: center;
+}
+
+#theme-title-3 {
+    grid-area: title-area3;
+    text-align: center;
+}
+
+#theme-title-4 {
+    grid-area: title-area4;
+    text-align: center;
+}
+
+#section-1 {
+    grid-area: section1;
+    background-color: #D7BDE2;
+    padding: 20px;
+}
+
+#section-2 {
+    grid-area: section2;
+    background-color: #D7BDE2;
+    padding: 20px;
+}
+
+#section-3 {
+    grid-area: section3;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-4 {
+    grid-area: section4;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-5 {
+    grid-area: section5;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-6 {
+    grid-area: section6;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-7 {
+    grid-area: section7;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-8 {
+    grid-area: section8;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-9 {
+    grid-area: section9;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-10 {
+    grid-area: section10;
+    background-color: #AED6F1;
+    padding: 20px;
+}
+
+#section-11 {
+    grid-area: section11;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-12 {
+    grid-area: section12;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-13 {
+    grid-area: section13;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-14 {
+    grid-area: section14;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-15 {
+    grid-area: section15;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-16 {
+    grid-area: section16;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-17 {
+    grid-area: section17;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-18 {
+    grid-area: section18;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-19 {
+    grid-area: section19;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-20 {
+    grid-area: section20;
+    background-color: #A3E4D7;
+    padding: 20px;
+}
+
+#section-21 {
+    grid-area: section21;
+    background-color: #F5B7B1;
+    padding: 20px;
+}
+
+#section-22 {
+    grid-area: section22;
+    background-color: #F5B7B1;
+    padding: 20px;
+}
+
+#section-23 {
+    grid-area: section23;
+    background-color: #F5B7B1;
+    padding: 20px;
+}
+
+#section-24 {
+    grid-area: section24;
+    background-color: #F5B7B1;
+    padding: 20px;
+}
+
+#section-25 {
+    grid-area: section25;
+    background-color: #F5B7B1;
+    padding: 20px;
+}
+
+#section-26 {
+    grid-area: section26;
+    background-color: #F5B7B1;
+    padding: 20px;
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+section > ul > li,
+section > span {
+    font-size: 14px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 300px;
+}
+
+/* Style for the sections, icons, title */
+#section-1,
+#section-3,
+#section-5,
+#section-9,
+#section-11,
+#section-13,
+#section-15,
+#section-17,
+#section-19,
+#section-21,
+#section-23,
+#section-25 {
+    cursor: pointer;
+}
+
+#section-1:hover,
+#section-3:hover,
+#section-5:hover,
+#section-9:hover,
+#section-11:hover,
+#section-13:hover,
+#section-15:hover,
+#section-17:hover,
+#section-19:hover,
+#section-21:hover,
+#section-23:hover,
+#section-25:hover {
+    opacity: 0.6;
+}
+
+section:active {
+    opacity: 1;
+}
+
+/* Style for the footer */
+#footer {
+    grid-area: footer-area;
+    text-align: center;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+/* Style for the project images */
+    .project-image {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+        width: 300px;
+    }
+}
+
+
+/**************************************************************/
+
+.index-background {
+    background-size: cover;
+    background-color: #F2F3F4;
+}
+.my-name {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-size: 20pt;
+    font-weight: lighter;
+    padding-top: 30px;
+    margin: 30px 30px 5px 30px;
+    color:  #4A235A;
+}
+
+.job-title {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-size: 17pt;
+    font-weight: lighter;
+    padding-top: 10px;
+    margin: 0px 30px 30px 30px;
+    color:  #4A235A;
+}
+
+.circle {
+   /* border: 3px solid #9B59B6;*/
+    width: 350px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: #EBDEF0;
+    justify-content: center;
+    margin: auto;
+}
+
+/* The first circle - TECHNOLOGY */
+
+.love-1 {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-size: 40pt;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 35px;
+    color:  #4A235A;
+}
+
+.inner_text1 {
+    height: 300px;
+    padding: 20% 10%;
+    text-align: center;
+    transform: rotate(8deg);
+    font-size: 16pt;
+    color:  #4A235A;
+}
+
+/* The second circle - CULTURE */
+
+.love-2 {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-size: 30pt;
+    font-weight: lighter;
+    text-align: center;
+    margin: 40px 17px 35px 17px;
+    color:  #4A235A;
+}
+
+.inner_text2 {
+    height: 300px;
+    padding: 25% 15%;
+    text-align: center;
+    transform: rotate(-8deg);
+    font-size: 16pt;
+    color:  #4A235A;
+}
+/* The thitd circle - QUOTES */
+
+.inner_text3 {
+    height: 300px;
+    padding: 25% 15%;
+    text-align: center;
+    transform: rotate(8deg);
+    font-size: 16pt;
+    color:  #4A235A;
+}
+/* /////////// Social Bar /////////// */
+.img-social-icon {
+    width: 60px;
+    height: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.social-bar {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+/* /////////// ABOUT section //////////// */
+
+.about-background {
+    background-size: cover;
+    background-color: #F2F3F4;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 400px;
+    max-height: 600px;
+    border-radius: 30%;
+}
+
+.About {
+    border-bottom: 2px solid #40E0D0;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    color:  #4A235A;
+    font-size: 30pt;
+    font-family: Encode Sans Semi Condensed';
+}
+
+.About-text {
+    padding-top: 20px;
+    line-height: 30px;
+    text-align: left;
+    margin: 40px;
+    color: #4A235A;
+    font-size: 16pt;
+    font-weight: lighter;
+    font-family: 'Encode Sans Semi Condensed';
+}
+
+.Skills {
+    border-bottom: 2px solid #40E0D0;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #4A235A;
+    font-size: 30pt;
+    font-weight: lighter;
+    font-family: 'Encode Sans Semi Condensed';
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container > div {
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 15pt;
+    line-height: 25px;
+    color: #4A235A;
+    font-family: 'Encode Sans Semi Condensed', 'prata';
+}
+
+.soft-skills {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: lighter;
+    line-height: 5px;
+    color: #4A235A;
+    font-family: 'Encode Sans Semi Condensed', 'prata';
+}
+
+.Happy {
+    border-bottom: 2px solid #40E0D0;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    color: #4A235A;
+    font-size: 30pt;
+    font-family: Encode Sans Semi Condensed';
+}
+
+.Happy-text {
+    padding-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 40px;
+    color: #4A235A;
+    font-size: 15pt;
+    font-weight: lighter;
+}
+
+/* /////////// CONTACT section /////////// */
+
+.contact-background {
+    background-size: cover;
+    background-color: #F2F3F4;
+}
+
+.say-hello {
+    border-bottom: 2px solid #40E0D0;
+    font-family: 'prata', 'Encode Sans Semi Condensed';
+    font-size: 35pt;
+    text-align: center;
+    padding-top: 50px;
+    color: #4A235A;
+    text-shadow: 3px 3px 6px #F9E79F
+}
+
+.Contact-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Encode Sans Semi Condensed', 'prata';
+    font-size: 19pt;
+    text-align: center;
+    width: 65%;
+    line-height: 50px;
+    padding-top: 50px;
+    color:  #4A235A
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width:768px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Media Queries for Responsive Web Design */
+/* Low Resolution Tablets, Mobiles (Landscape) 320-768px */
+@media only screen and (min-width: 769px) {
+
+    /* This is the main area */
+    main#main {
+        grid-area: main-area;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "title-area1 title-area1"
+            "section1 section2"
+            "title-area2 title-area2"
+            "section3 section4"
+            "section5 section6"
+            "section7 section8"
+            "section9 section10"
+            "title-area3 title-area3"
+            "section11 section12"
+            "section13 section14"
+            "section15 section16"
+            "section17 section18"
+            "section19 section20"
+            "title-area4 title-area4"
+            "section21 section22"
+            "section23 section24"
+            "section25 section26";
+    }
+}
+
+/* Media Queries for Responsive Web Design */
+/* Low Resolution Tablets, Mobiles (Landscape) 320-768px */
+@media only screen and (min-width:320px)and (max-width: 768px) {
+
+    /* This is the main area */
+    main#main {
+        grid-area: main-area;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "title-area1"
+            "section1"
+            "section2"
+            "title-area2"
+            "section3"
+            "section4"
+            "section5"
+            "section6"
+            "section7"
+            "section8"
+            "section9"
+            "section10"
+            "title-area3"
+            "section11"
+            "section12"
+            "section13"
+            "section14"
+            "section15"
+            "section16"
+            "section17"
+            "section18"
+            "section19"
+            "section20"
+            "title-area4"
+            "section21"
+            "section22"
+            "section23"
+            "section24"
+            "section25"
+            "section26";
+    }
+
+    .container {
+        cursor: pointer;
+        float: right;
+        padding-top: 6px;
+        display: block;
+    }
