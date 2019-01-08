@@ -114,6 +114,8 @@ main#main {
 #title {
     grid-area: title;
     text-align: center;
+    color: #4A235A;
+    text-shadow: 3px 3px 6px #40E0D0;
 }
 
 #theme-title-1 {
@@ -319,7 +321,11 @@ section > span {
     width: 100%;
     height: 100%;
 }
-
+iframe {
+    width="560";
+    height="315";
+    border-style: none;
+}
 .project-image {
     display: block;
     margin-right: auto;
